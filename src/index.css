@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: neurial-grotesk;
+  src: url("./assets/fonts/Fontspring-DEMO-neurialgrotesk-regular.otf");
+}
+:root {
+  --purple-bgrc: #8d34ff;
+  --login-bgrc: #e6d2ff;
+  --off-white: #ffffff;
+  --ff-outfits: "outfit", sans-serif
+}
+/* nav */
+nav h2 {
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-size: 28.33px;
+}
+.login-btn {
+  background-color: var(--login-bgrc);
+  color: var(--purple-bgrc);
+  border-radius: 8px;
+  border: none;
+  height: 61px;
+  width: 120px;
+  font-weight: 5oo;
+  font-size: 20px;
+  font-family: neurial-grotesk;
+}
+.sign-up-btn {
+  background-color: var(--purple-bgrc);
+  color: #f5f5f5;
+  border-radius: 8px;
+  border: none;
+  height: 61px;
+  width: 120px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: neurial-grotesk;
+}
+
+/* auth - signin */
+.sign-in-container {
+  background-image: url("/src/assets/13625\ 1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
+/* card */
+.card-container {
+  width: 30%;
+}
+.card-img {
+  height: 256.62px;
+  width: 256.62px;
+}
+.card-title {
+  font-size: 15.97px;
+  font-weight: 700;
+  font-family: neurial-grotesk;
+}
+.add-to-cart-btn {
+  background-color: var(--purple-bgrc);
+
+  color: var(--off-white);
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 765px) {
+  .sign-in-container, .sign-up-container {
+    background-image: none;
+  }
+  .card-container{
+    min-width: 98%;
+  }
+  .card-title{
+    font-size: 20px;
+    font-weight: 700;
+
+  }
+  .card-img{
+    height: 335.55px;
+    width: 335.55px;
+  }
+
+  
+}
+
+@media(min-width:768px)and (max-width:1023px){
+  .card-container{
+    min-width: 48%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .card-img{
+    height: 335.55px;
+    width:  335.55px;
+  }
+  .main-form{
+    width: 100%;
+    
+  }
+  .form-bg{
+    width: 50px;
+    margin: auto;
+  }
+}
+
+
+
+/* signup-page and login-page */
+.form-bg {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 640px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-form {
+  position: relative;
+
+  
+}
+.logo-name {
+  color: #fff;
+  width: 100%;
+  font-size: 22px;
+}
+.form-h2 {
+  position: absolute;
+  right: 50rem;
+  top: 5rem;
+  width: 40%;
+  
+}
+.form-h3 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.form-p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+label {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+.input-names {
+  width: 100%;
+  height: 49px;
+  border: 2.5px solid #dedfe0;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.input-details {
+  width: 100%;
+  height: 54.3px;
+  border-radius: 5px;
+  border: 2.5px solid #dedfe0;
+}
+.p-checkbox {
+  font-size: 16px;
+  width: 342.35px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #716f6f;
+}
+b {
+  color: #8d34ff;
+}
+.btn-form {
+  border: none;
+  font-size: 22px;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+}
+.sign {
+  background-color: #8d34ff;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.google {
+  background-color: #fff;
+  border: 1px solid black;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.last-form-p {
+  text-align: center;
+  margin-top: 1rem;
+}
+/* Cart */
+.cart-h1{
+  font-size: 28px;
+}
+.title-cart{
+  font-weight: 600;
+  font-size: 14px;
+}
+.cart-img{
+  width: 95px;
+  height: 90px;
+  border-radius: 3px;
+}
+.minus{
+  background-color: #716f6f;
+  padding: 7px 5px;
+  border-radius: 3px;
+}
+.plus{
+  background-color: #8d34ff;
+  padding: 5px;
+  border-radius: 3px;
+}
+.cart-d{
+  width: 179.69px;
+}
+.remove{
+  border: none;
+  background-color: #fff;
+  border: 1px solid red;
+  border-radius:3px;
+  /* padding: 10px; */
+  width: 87.33px;
+  height: 26.36px;
+  color: red;
+}
+.order{
+  border: none;
+  background-color: #8d34ff;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  height: 44px;
+}
+.price{
+  font-weight: 700;
+}
+.btn{
+  font-size: 10px;
+  
+}
